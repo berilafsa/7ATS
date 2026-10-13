@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#121413">
+  <title>Studio Orca — 7 ATS</title>
+  <meta name="description" content="7 ATS — Studio Orca'nın yedi parçalık portre serisi. Altın dokulu zemin, neon yeşil çizgiler. Seven works. One visual language.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Studio Orca">
+  <meta property="og:title" content="7 ATS — Studio Orca">
+  <meta property="og:description" content="Yedi portre. Tek görsel dil. A seven-piece portrait series by Studio Orca.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="7 ATS — Studio Orca portre serisi">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="7 ATS — Studio Orca">
+  <meta name="twitter:description" content="Yedi portre. Tek görsel dil. A seven-piece portrait series by Studio Orca.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121413'/%3E%3Crect y='58' width='64' height='6' fill='%2345e33a'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='44' fill='%23fff' text-anchor='middle'%3E7%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preload" as="image" href="assets/works/sm/01-jordan.webp" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flag-tr" viewBox="0 0 30 20">
+      <rect width="30" height="20" fill="#e30a17"/>
+      <circle cx="11" cy="10" r="5" fill="#fff"/>
+      <circle cx="12.25" cy="10" r="4" fill="#e30a17"/>
+      <polygon fill="#fff" points="16.6,10 19.6,9.03 17.75,11.6 17.75,8.4 19.6,10.97"/>
+    </symbol>
+    <symbol id="flag-en" viewBox="0 0 60 40">
+      <clipPath id="uk-c"><rect width="60" height="40"/></clipPath>
+      <g clip-path="url(#uk-c)">
+        <rect width="60" height="40" fill="#012169"/>
+        <path d="M0,0 60,40 M60,0 0,40" stroke="#fff" stroke-width="8"/>
+        <path d="M0,0 60,40 M60,0 0,40" stroke="#c8102e" stroke-width="3"/>
+        <path d="M30,0V40M0,20H60" stroke="#fff" stroke-width="12"/>
+        <path d="M30,0V40M0,20H60" stroke="#c8102e" stroke-width="7"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">STUDIO ORCA</a>
+    <nav class="nav-links" aria-label="Menu">
+      <a href="#statement" data-i18n="nav.collection">Koleksiyon</a>
+      <a href="#sequence" data-i18n="nav.series">Seri</a>
+      <a href="#about" data-i18n="nav.studio">Stüdyo</a>
+      <a href="#contact" data-i18n="nav.contact">İletişim</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button data-lang="tr" aria-pressed="true" title="Türkçe"><svg><use href="#flag-tr"/></svg><span>TR</span></button>
+        <button data-lang="en" aria-pressed="false" title="English"><svg><use href="#flag-en"/></svg><span>EN</span></button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav aria-label="Menu">
+      <a href="#statement"><i>01</i><span data-i18n="nav.collection">Koleksiyon</span></a>
+      <a href="#sequence"><i>02</i><span data-i18n="nav.series">Seri</span></a>
+      <a href="#works"><i>03</i><span data-i18n="nav.works">Eserler</span></a>
+      <a href="#about"><i>04</i><span data-i18n="nav.studio">Stüdyo</span></a>
+      <a href="#contact"><i>05</i><span data-i18n="nav.contact">İletişim</span></a>
+    </nav>
+    <div class="menu-foot">
+      <span>7 ATS — SEVEN WORKS. ONE VISUAL LANGUAGE.</span>
+      <a class="handle" href="https://instagram.com/studiorca" target="_blank" rel="noopener">@studiorca</a>
+    </div>
+  </div>
+
+  <section class="hero dark" id="top">
+    <div class="hero-text">
+      <span class="eyebrow">STUDIO ORCA</span>
+      <span class="rule"></span>
+      <h1>7 ATS</h1>
+      <p class="kicker">A SEVEN-PIECE PORTRAIT SERIES</p>
+      <p class="muted" data-i18n="hero.sub">Koleksiyon portfolyosu</p>
+      <a href="#sequence" class="cta"><span data-i18n="hero.cta">Seriyi keşfet</span> <span aria-hidden="true">↓</span></a>
+      <div class="hero-foot">
+        <span class="muted small">ART / DESIGN / VISUAL LANGUAGE</span>
+        <span class="small strong">FOUNDED BY BERIL</span>
+        <a class="handle" href="https://instagram.com/studiorca" target="_blank" rel="noopener">@studiorca</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img class="prog" id="heroImg" alt="Jordan — 7 ATS" fetchpriority="high">
+      <div class="hero-counter"><span id="heroIdx">01</span> / 07</div>
+    </div>
+  </section>
+
+  <section class="light statement" id="statement">
+    <div class="bar"><span>STUDIO ORCA</span><span>COLLECTION STATEMENT</span></div>
+    <h2 data-i18n="statement.title">YEDİ PORTRE.<br>TEK GÖRSEL DİL.</h2>
+    <span class="rule"></span>
+    <p class="lead single" data-i18n="statement.body"></p>
+  </section>
+
+  <section class="dark sequence" id="sequence">
+    <div class="bar"><span>STUDIO ORCA</span><span>SERIES INDEX</span></div>
+    <div class="seq-head">
+      <div>
+        <h2>THE SEQUENCE</h2>
+        <p class="accent small">7 ATS &nbsp;/&nbsp; 01 – 07</p>
+      </div>
+      <p class="swipe-hint" aria-hidden="true"><span data-i18n="seq.swipe">Kaydır</span> <b>→</b></p>
+    </div>
+    <ol class="strip" id="strip"></ol>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </section>
+
+  <section class="dark works" id="works"></section>
+
+  <section class="light about" id="about">
+    <div class="bar"><span>STUDIO ORCA</span><span>ABOUT THE STUDIO</span></div>
+    <div class="about-grid">
+      <div>
+        <h2>STUDIO<br>ORCA</h2>
+        <span class="rule"></span>
+        <p class="strong">ART &amp; DESIGN STUDIO</p>
+        <p class="muted">Founded by Beril</p>
+      </div>
+      <div>
+        <p class="lead" data-i18n="about.body"></p>
+        <p class="strong ig">INSTAGRAM &nbsp;/&nbsp; <a href="https://instagram.com/studiorca" target="_blank" rel="noopener">@studiorca</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark contact" id="contact">
+    <span class="rule wide"></span>
+    <h2>STUDIO ORCA</h2>
+    <p class="accent big">7 ATS</p>
+    <p class="strong small">COLLECTION INQUIRIES</p>
+    <p class="muted" data-i18n="contact.sub">Koleksiyon ve eser talepleri için</p>
+    <button class="btn" data-inquire="general"><span data-i18n="contact.btn">Instagram'dan yaz</span> &nbsp;·&nbsp; @studiorca</button>
+    <footer class="foot">
+      <span>FOUNDED BY BERIL</span>
+      <span>SEVEN WORKS. ONE VISUAL LANGUAGE.</span>
+    </footer>
+  </section>
+
+  <a href="#top" class="to-top" id="toTop" data-i18n-aria="top" aria-label="Başa dön">↑</a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="7 ATS" hidden>
+    <div class="lb-top">
+      <span class="accent" id="lbIdx"></span>
+      <button class="lb-close" data-i18n-aria="lb.close" aria-label="Kapat">✕</button>
+    </div>
+    <div class="lb-stage" id="lbStage">
+      <img id="lbImg" class="prog" alt="">
+    </div>
+    <div class="lb-bottom">
+      <button class="lb-prev" data-i18n-aria="lb.prev" aria-label="Önceki eser">←</button>
+      <div class="lb-mid">
+        <strong id="lbName"></strong>
+        <button class="lb-inquire" id="lbInquire" data-inquire="0" data-i18n="lb.inquire">Talep gönder</button>
+      </div>
+      <button class="lb-next" data-i18n-aria="lb.next" aria-label="Sonraki eser">→</button>
+    </div>
+    <p class="lb-hint" aria-hidden="true" data-i18n="lb.hint"></p>
+  </div>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
